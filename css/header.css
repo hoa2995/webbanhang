@@ -1,0 +1,80 @@
+header {
+    background: #333;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.cart a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+
+.cart a:hover {
+    opacity: 0.8;
+}
+
+.user-menu {
+    position: relative;
+    margin-left: 1rem;
+}
+
+.user-icon {
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: white;
+    padding: 0.5rem;
+}
+
+.user-dropdown {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border-radius: 4px;
+    min-width: 150px;
+    display: none;
+    z-index: 1000;
+}
+
+.user-dropdown.active {
+    display: block;
+}
+
+.user-dropdown a {
+    color: #333;
+    padding: 0.8rem 1rem;
+    display: block;
+    text-decoration: none;
+}
+
+.user-dropdown a:hover {
+    background: #f4f4f4;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}

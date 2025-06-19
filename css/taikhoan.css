@@ -1,0 +1,29 @@
+.account-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.account-info {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.info-card {
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.user-avatar {
+    font-size: 5rem;
+    color: #666;
+}
+
+.user-details p {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+}

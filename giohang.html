@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng - Shop Online</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/giohang.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Shop Online</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="#">Sản phẩm</a></li>
+                <li id="loginButton"><a href="login.html">Đăng nhập</a></li>
+            </ul>
+        </nav>
+        <div class="user-info">
+            <div class="cart">
+                <a href="giohang.html">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+            <div class="user-menu" style="display: none;">
+                <i class="fas fa-user user-icon"></i>
+                <div class="user-dropdown">
+                    <a href="taikhoan.html">Tài khoản của tôi</a>
+                    <a href="#" id="logoutBtn">Đăng xuất</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="cart-container">
+        <h1>Giỏ hàng của bạn</h1>
+        <div class="cart-summary">
+            <div class="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+            <div class="cart-total">
+                <h3>Tổng giỏ hàng</h3>
+                <div class="total-row">
+                    <span>Tổng tiền:</span>
+                    <span id="total-amount">0₫</span>
+                </div>
+                <a href="chitietgiohang.html" class="checkout-btn">Thanh toán</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Shop Online. All rights reserved.</p>
+    </footer>
+
+    <script src="js/common.js"></script>
+    <script src="js/giohang.js"></script>
+</body>
+</html>
